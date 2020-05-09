@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    font-size: 1vw;
+}
+.lineHeight{
+    line-height: 1.5vw;
+}
+:host ::ng-deep .mat-body, .mat-body-1, .mat-typography, .mat-chip{
+    font-size: 0.8vw;
+}
+.width100{
+    width: 100%;
+}
+.noPadding{
+    padding: 0;
+}
+.noPaddingRight{
+    padding-right: 0;
+}
+.alignCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alignLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.alignRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bold{
+    font-weight: bold!important;
+}
+.italic{
+    font-style: italic;
+}
+.red{
+    color: red;
+}
+mat-form-field{
+    width: 100%;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}
+.borderLeft{
+    border-left: 1px solid lightgray;
+}
+.borderRight{
+    border-right: 1px solid lightgray;
+}
+.borTopRad{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.borRad{
+    border-radius: 5px;
+}
+.modal-title{
+    color: white;
+    font-size: 1.2vw;
+}
+.margBottom{
+    margin-bottom: 2.5vh;
+}
+.mat-checkbox-layout {
+    white-space: normal !important;
+}
+.mat-checkbox-inner-container, .mat-radio-outer-circle, .mat-radio-container, .mat-radio-inner-circle{
+    height: 1vw!important;
+    width: 1vw!important;
+    margin-right: 0.5vw!important;
+}
+mat-icon{
+    display: flex;
+    align-items: center;
+}
+:host ::ng-deep .mat-radio-label-content{
+    padding-left: 0.1vw;
+}

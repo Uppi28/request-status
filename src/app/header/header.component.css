@@ -1,0 +1,30 @@
+.headerWrapper{
+    height: 8vh;
+    background: #747474;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+.appName{
+    height: 8vh;
+}
+.subSecWrapper{
+    font-weight: normal;
+    font-size: 0.7vw;
+    height: 8vh;
+    justify-content: space-around;
+}
+.subSec{
+    padding: 0 1vw;
+}
+.userIcons{
+    height: 8vh;
+    justify-content: flex-end;
+}
+.glyphicon{
+    padding: 0 0.8vw;
+}
