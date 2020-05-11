@@ -18,12 +18,14 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from "@angular/material/core";
 import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 // import { MatFileUploadModule } from "angular-material-fileupload";
 import { TabsComponent } from './tabs/tabs.component';
 import { DealerAllocationComponent } from './dealer-allocation/dealer-allocation.component';
 import { VehicleeventStatusComponent } from './vehicleevent-status/vehicleevent-status.component';
 import { ReviewViewComponent } from './review-view/review-view.component';
 import { AddreqModalComponent } from './addreq-modal/addreq-modal.component';
+import { MultiselectDemoComponent } from './multiselect-demo/multiselect-demo.component';
 
 
 
@@ -40,6 +42,7 @@ import { AddreqModalComponent } from './addreq-modal/addreq-modal.component';
     VehicleeventStatusComponent,
     ReviewViewComponent,
     AddreqModalComponent,
+    MultiselectDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ import { AddreqModalComponent } from './addreq-modal/addreq-modal.component';
     MatCheckboxModule,
     // MatFileUploadModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMatSelectSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

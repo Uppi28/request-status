@@ -1,0 +1,11 @@
+<div class="col-xs-3">
+    <mat-form-field color="accent">
+        <mat-select [formControl]="bankMultiCtrl" placeholder="Banks" [multiple]="true" #multiSelect>
+            <ngx-mat-select-search [showToggleAllCheckbox]="true" (toggleAll)="toggleSelectAll($event)"
+                [formControl]="bankMultiFilterCtrl"></ngx-mat-select-search>
+            <mat-option *ngFor="let bank of filteredBanksMulti | async" [value]="bank">
+                {{bank.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
