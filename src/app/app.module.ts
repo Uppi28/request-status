@@ -22,6 +22,8 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
 import { TabsComponent } from './tabs/tabs.component';
 import { DealerAllocationComponent } from './dealer-allocation/dealer-allocation.component';
 import { VehicleeventStatusComponent } from './vehicleevent-status/vehicleevent-status.component';
+import { ReviewViewComponent } from './review-view/review-view.component';
+import { AddreqModalComponent } from './addreq-modal/addreq-modal.component';
 
 
 
@@ -36,6 +38,8 @@ import { VehicleeventStatusComponent } from './vehicleevent-status/vehicleevent-
     TabsComponent,
     DealerAllocationComponent,
     VehicleeventStatusComponent,
+    ReviewViewComponent,
+    AddreqModalComponent,
   ],
   imports: [
     BrowserModule,

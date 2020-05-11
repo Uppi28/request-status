@@ -10,10 +10,10 @@ declare var $: any;
 export class AppComponent implements OnInit{
   title = 'request-status';
   ngOnInit() {
-    // $(document).ready(function() {
-    //   $('#discModal').modal({
-    //     show: true
-    //   });
-    // })
+    $(document).ready(function() {
+      $('#discModal').modal({
+        show: true
+      });
+    })
   }
 }

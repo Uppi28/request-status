@@ -96,3 +96,19 @@ mat-icon{
 :host ::ng-deep .mat-radio-label-content{
     padding-left: 0.1vw;
 }
+.modal, .btn{
+    font-size: 0.8vw;
+    line-height: 1vw;
+}
+.modal-dialog{
+    width: 50vw;
+}
+.fontMedium{
+    font-size: 0.9vw;
+}
+
+@media (min-width: 1200px) {
+    .modal-dialog{
+        width: 40vw;
+    }
+}

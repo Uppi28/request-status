@@ -39,7 +39,6 @@ export class BodyComponent implements OnInit {
   selectable = true;
   removable = true;
   addOnBlur = true;
-  disabled = true;
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
   bacs: Chips[] = [];
   fans: Chips[] = [];
@@ -88,12 +87,5 @@ export class BodyComponent implements OnInit {
   ngOnInit(): void {
    
   }
-
-  review() {
-    console.log(this.disabled);
-    
-    this.disabled = false;
-  }
-
 
 }
