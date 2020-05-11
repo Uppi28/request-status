@@ -35,7 +35,7 @@ export class VehicleeventStatusComponent implements OnInit {
 
   commonfield = new FormControl();
   commonfields: string[] = ['Order Number', 'Vehicle Information Number (VIN)', 'Plant Code', 'Delivery Type', 'Target Production Date', 
-    'Manufacturer\'s Suggested Retail Price (MSRP)'];
+    'Manufacturer\'s Suggested Retail Price (MSRP)', 'Other (Please Specify)'];
   
   optionCont = new FormControl();
   optionConts: string[] = ['Full Option String', 'Preferred Equipment Group (Trim Level Package)', 'Engine','Transmission', 'Exterior Color', 
