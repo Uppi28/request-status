@@ -17,8 +17,8 @@ export class BodyComponent implements OnInit {
   mktSeln = [{name: 'US'}, {name: 'Export'}, {name: 'Canada'}];
   mktSelnSltd = [{name: 'US'}];
 
-  division = [{name: '001-Chevorlet (US)'}, {name: '004-Buick (US)'}, {name: '006-Cadillac (US)'}, {name: '012-GMC (US)'}];
-  divisionSltd = [{name: '001-Chevorlet (US)'}, {name: '004-Buick (US)'}];
+  division = [{name: '001-Chevrolet (US)'}, {name: '004-Buick (US)'}, {name: '006-Cadillac (US)'}, {name: '012-GMC (US)'}];
+  divisionSltd = [{name: '001-Chevrolet (US)'}, {name: '004-Buick (US)'}];
 
   region = [{name: '10 WESTERN REGION'}, {name: '20 SOUTH CENTRAL REGION'}, {name: '30 SOUTHEAST REGION'}, {name: '40 NORTHEAST REGION'}, {name: '50 NORTH CENTRAL REGION'}];
   regionSltd = [{name: '10 WESTERN REGION'}, {name: '20 SOUTH CENTRAL REGION'}];

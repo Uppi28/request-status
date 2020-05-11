@@ -13,8 +13,8 @@ export class DealerAllocationComponent implements OnInit {
   months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
   years = ['2016', '2017', '2018', '2019', '2020'];
 
-  division = [{name: '001-Chevorlet (US)'}, {name: '004-Buick (US)'}, {name: '006-Cadillac (US)'}, {name: '012-GMC (US)'}];
-  divisionSltd = [{name: '001-Chevorlet (US)'}, {name: '004-Buick (US)'}];
+  division = [{name: '001-Chevrolet (US)'}, {name: '004-Buick (US)'}, {name: '006-Cadillac (US)'}, {name: '012-GMC (US)'}];
+  divisionSltd = [{name: '001-Chevrolet (US)'}, {name: '004-Buick (US)'}];
 
   modelYear = new FormControl();
   modelYears: string[] = ['2020', '2019', '2018', '2017'];
