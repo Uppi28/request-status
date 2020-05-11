@@ -23,7 +23,7 @@ export class DealerAllocationComponent implements OnInit {
   allocGrps: string[] = ['BLAZER', 'BOLTEV', 'CAM', 'CAMCON', 'CAPTIM', 'CAPTIV', 'CCRUHD'];
 
   conData = new FormControl();
-  conDatas: string[] = ['Estimated Shipments ', 'Final Allocation',  'Production Consensus (Approved Qty)', 'Monthly Demand', 'Unfufilled Demand', 'Dealer Declined Units']
+  conDatas: string[] = ['Estimated Shipments ', 'Final Allocation',  'Production Consensus (Approved Qty)', 'Monthly Demand', 'Unfulfilled Demand', 'Dealer Declined Units']
   
   startDate = new FormControl();
   endDate = new FormControl();
