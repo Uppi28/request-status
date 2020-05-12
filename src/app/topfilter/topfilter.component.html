@@ -7,7 +7,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="topFilterTitle">{{title}}</div>
     <mat-form-field [formGroup]="searchUserForm" autocomplete="off">
-        <mat-select [placeholder]="title" formControlName="userType" multiple>
+        <mat-select [placeholder]="title" formControlName="userType" multiple [(ngModel)]="selected">
             <mat-option #allSelected (click)="toggleAllSelection()" [value]="0">All</mat-option>
             <mat-option *ngFor="let filter of filters" [value]="filter.key" (click)="tosslePerOne(allSelected.viewValue)">
                 {{filter.name}}

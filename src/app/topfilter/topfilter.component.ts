@@ -13,13 +13,18 @@ export class TopfilterComponent implements OnInit {
   @Input() userProfile: [{key: number, name: string}];
   @Input() title: string;
 
+
   searchUserForm: FormGroup;
+  selected: number[]
 
   @ViewChild('allSelected') private allSelected: MatOption;
 
   constructor(private fb: FormBuilder){}
 
   ngOnInit() {
+    this.selected = this.userProfile.map((d)=>d.key);
+    console.log(this.selected);
+
     this.searchUserForm = this.fb.group({
       userType: new FormControl('')
     });
