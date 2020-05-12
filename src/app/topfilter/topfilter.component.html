@@ -9,7 +9,7 @@
     <mat-form-field [formGroup]="searchUserForm" autocomplete="off">
         <mat-select [placeholder]="title" formControlName="userType" multiple [(ngModel)]="selected">
             <mat-option #allSelected (click)="toggleAllSelection()" [value]="0">All</mat-option>
-            <input matInput (keyup)="onKey($event.target.value)">
+            <input class="searchInput" matInput (keyup)="onKey($event.target.value)" placeholder="Search">
             <mat-option *ngFor="let filter of filters" [value]="filter.key" (click)="togglePerOne(allSelected.viewValue)">
                 {{filter.name}}
             </mat-option>
