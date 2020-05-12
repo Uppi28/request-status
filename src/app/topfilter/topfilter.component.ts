@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, ViewChild, OnInit, Input } from '@angular/core';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { MatOption } from '@angular/material/core';
 
 @Component({
   selector: 'app-topfilter',
@@ -7,16 +9,40 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TopfilterComponent implements OnInit {
 
-  constructor() { }
-  @Input() filters: string[];
+  @Input() filters: [{key: number, name: string}];
+  @Input() userProfile: [{key: number, name: string}];
   @Input() title: string;
-  @Input() userProfile: object[];
-  
+
+  searchUserForm: FormGroup;
+
+  @ViewChild('allSelected') private allSelected: MatOption;
+
+  constructor(private fb: FormBuilder){}
+
+  ngOnInit() {
+    this.searchUserForm = this.fb.group({
+      userType: new FormControl('')
+    });
+  }
   compareWithFunc(a, b) {
     return a.name === b.name;
   }
-  
-  ngOnInit(): void {
+  tosslePerOne(all){ 
+    if (this.allSelected.selected) {  
+      this.allSelected.deselect();
+      return false;
+  }
+  if(this.searchUserForm.controls.userType.value.length==this.filters.length)
+    this.allSelected.select();
+
+}
+  toggleAllSelection() {
+    if (this.allSelected.selected) {
+      this.searchUserForm.controls.userType
+        .patchValue([...this.filters.map(item => item.key), 0]);
+    } else {
+      this.searchUserForm.controls.userType.patchValue([]);
+    }
   }
 
 }
