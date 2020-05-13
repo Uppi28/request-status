@@ -12,8 +12,8 @@ export class VehicleeventStatusComponent implements OnInit {
 
   disabled = false;
 
-  division = [{ name: '001-Chevrolet (US)' }, { name: '004-Buick (US)' }, { name: '006-Cadillac (US)' }, { name: '012-GMC (US)' }];
-  divisionSltd = [{ name: '001-Chevrolet (US)' }, { name: '004-Buick (US)' }];
+  division = [{ key: 1, name: '001-Chevrolet (US)' }, { key: 2, name: '004-Buick (US)' }, { key: 3, name: '006-Cadillac (US)' }, { key: 4, name: '012-GMC (US)' }];
+  divisionSltd = [{ key: 1, name: '001-Chevrolet (US)' }, { key: 2, name: '004-Buick (US)' }];
 
   ddEntity = new FormControl();
   ddEntitys: string[] = ['Retail Only', 'Non-Retail (Includes Fleet)', 'Fleet Only']
